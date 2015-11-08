@@ -92,13 +92,13 @@ section {
 	background-color: #1A1919;
 }
 /*.adver {
-	height: 400px;
-	width: 200px;
-	background-color: #CC0000;
-	position: absolute;
-	top: 0;
-	left: 0;
-}*/
+ height: 400px;
+ width: 200px;
+ background-color: #CC0000;
+ position: absolute;
+ top: 0;
+ left: 0;
+ }*/
 
 /* nav */
 
@@ -130,7 +130,6 @@ section {
 #main-nav ul li ul li {
 	width: 130px;
 }
-
 /* footer */
 
 #footer-nav {
@@ -152,97 +151,100 @@ section {
 }
 
 /* search bar*/
-#search input{
+#search input {
 	margin: 0;
-    padding: 0;
-    width: 60%;
-	
+	padding: 0;
+	width: 60%;
 }
-#search_btn{
-	    padding: 0 0 0 0 !important;
-    height: 2em;
-    cursor: pointer;
-    width: 7em;
-    background-color: #FFFFFF;
-    background-image: url('../images/search-button.png');
-    background-size: 100% 100%;
-    border: none;
+#search_btn {
+	padding: 0 0 0 0 !important;
+	height: 2em;
+	cursor: pointer;
+	width: 7em;
+	background-color: #FFFFFF;
+	background-image: url('../images/search-button.png');
+	background-size: 100% 100%;
+	border: none;
 }
 
 /* forms */
-form{
-	margin:0 auto;
+form {
+	margin: 0 auto;
 }
-#cf_comments{
+#cf_comments {
 	width: 38%;
 }
 #reset {
 	margin-left: 4%;
 }
-label{
+label {
 	display: inline-block;
 	width: 6%;
 }
-input{
+input {
 	margin: 1%;
 }
 
 /* section artical*/
-.games_block{
-	display: initial;
-	text-align:center;
-    width: 100%;
-    height: 16em;
-    border: 1px solid #D5D5D5;
-    margin: 1%;
+.li_games {
+	margin-bottom: 1%;
 }
-.games_block img{
-	display:block;
+.games_block {
+	display: initial;
+	text-align: center;
+	width: 100%;
+	height: 16em;
+	margin: 1%;
+}
+.games_block img {
+	display: block;
 	width: 10%;
 	height: 10%;
-	
+	margin: 0 auto;
 }
-.games_block a{
+.games_block a {
 	color: blue;
 	text-decoration: underline;
-	    margin: 0 21%;
+	margin: 0 21%;
 }
-.games_block h3{
+.games_block h3 {
 	text-align: center;
-	color: #404040 ;
+	color: #404040;
 	font-size: 2em;
+	font-style: oblique;
+	font-weight: 900;
+	font-variant: small-caps;
 }
-.games_block h6{
+.games_block h6 {
 	margin: 0;
 }
-.games_block iframe{
-	margin-right: 21%;
+.games_block iframe {
+	display: block;
+	margin: 0 auto;
 }
-#dota2{
+#dota2 {
 	margin: 2%;
 }
-#war_thunder{
+#war_thunder {
 	margin: 2%;
 }
-#world_of_warships{
+#world_of_warships {
 	margin: 2%;
 }
 /* social bar*/
 
-
-
 /* Responsive Design */
 /* computer device */
 /*@media screen and (max-width: 960px) {
-#main-nav{
-	display: none;
-}
-}
-/* tablet  device */
+ #main-nav{
+ display: none;
+ }
+ }
+ /* tablet  device */
 /*@media screen and (max-width: 758px) {
-	display: none;
-}
-/* phone device */
+ display: none;
+ }
+ /* phone device */
 /*@media screen and (max-width: 480px) {
-	display: none;
-}*/
+ display: none;
+ }*/
