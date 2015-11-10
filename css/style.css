@@ -1,5 +1,12 @@
 /*general*/
+
 body {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 	direction: rtl;
 	text-align: right;
 	color: white;
@@ -31,6 +38,7 @@ a {
 	text-decoration: none;
 	color: #FFFFFF;
 }
+
 li:hover {
 	background-color: #333332;
 }
@@ -42,8 +50,10 @@ li:hover {
 	width: 1000px;
 	margin: 0 auto;
 	padding: 0;
+	height: 100%;
 }
 header {
+	position: relative;
 	background-color: black;
 	background-image: url('../images/header_bg.jpg');
 	height: 230px;
@@ -63,10 +73,11 @@ section {
 }
 
 #logo {
+	position: absolute;
 	float: right;
-	width: 200px;
-	height: 100px;
-	background-color: #CC0000;
+	position: absolute;
+	left: 66%;
+	top: -8%;
 }
 #social-bar {
 	float: right;
@@ -74,10 +85,10 @@ section {
 	background-color: #FF6600;
 }
 #search {
-	float: right;
-	width: 300px;
-	background-color: #CC0000;
-	height: 30px;
+
+	float: left;
+	position: relative;
+	width: 30%;
 }
 
 #main-nav {
@@ -86,13 +97,15 @@ section {
 	height: 50px;
 	background-color: #1A1919;
 }
-.adver {
-	height: 400px;
-	width: 200px;
-	background-color: #CC0000;
-	position: absolute;
-	top: 0;
-	left: 0;
+
+/*logo*/
+#logo a {
+	font-family: 'Rock Salt', cursive;
+	color: #CC0000;
+	text-align: center;
+	font-size: 3em;
+	font-weight: bolder;
+	text-shadow: 1px 1px 1px #000, 3px 3px 5px #990000;
 }
 
 /* nav */
@@ -126,7 +139,12 @@ section {
 	width: 130px;
 }
 
+
 /* footer */
+
+/* footer */
+
+
 #footer-nav {
 	width: 430px;
 	clear: both;
@@ -145,3 +163,121 @@ section {
 	border-right: 1px solid;
 }
 
+/* search bar*/
+#search_input {
+	margin: 0;
+	padding: 0;
+	width: 0em;
+	position: absolute;
+	left: 93%;
+}
+#search_input input {
+	height: 2em;
+}
+#search_btn {
+	padding: 0 0 0 0 !important;
+	height: 2em;
+	cursor: pointer;
+	width: 7em;
+	background-color: #FFFFFF;
+	background-image: url('../images/search-button.png');
+	background-size: 100% 100%;
+	border: none;
+	position: absolute;
+	left: 1%;
+}
+
+/* forms */
+form {
+	margin: 5% 10% 0 0;
+}
+#cf_comments {
+	width: 38%;
+}
+#reset {
+	margin-left: 4%;
+}
+label {
+	display: inline-block;
+	width: 6%;
+}
+input {
+	margin: 1%;
+}
+
+/* section artical*/
+.li_games {
+	margin-bottom: 1%;
+}
+.li_games:hover{
+	background-color: #F0F0F5;
+}
+.games_block {
+	display: inline;
+	text-align: center;
+	width: 100%;
+	height: 16em;
+	margin: 1%;
+}
+.games_block img {
+	display: block;
+	width: 10%;
+	height: 10%;
+	margin: 0 auto;
+}
+.games_block a {
+	color: blue;
+	text-decoration: underline;
+	display: block;
+}
+.games_block h3 {
+	text-align: center;
+	color: #404040;
+	font-size: 2em;
+	font-style: oblique;
+	font-weight: 900;
+	font-variant: small-caps;
+}
+.games_block h6 {
+	margin: 0;
+}
+.games_block iframe {
+	display: block;
+	margin: 0 auto;
+}
+#dota2 {
+	margin: 2%;
+}
+#war_thunder {
+	margin: 2%;
+}
+#world_of_warships {
+	margin: 2%;
+}
+
+/*.adver {
+ height: 400px;
+ width: 200px;
+ background-color: #CC0000;
+ position: absolute;
+ top: 0;
+ left: 0;
+ }*/
+
+/* social bar*/
+
+/* Responsive Design */
+/* computer device */
+/*@media screen and (max-width: 960px) {
+ #main-nav{
+ display: none;
+ }
+ }
+ /* tablet  device */
+/*@media screen and (max-width: 758px) {
+ display: none;
+ }
+ /* phone device */
+/*@media screen and (max-width: 480px) {
+ display: none;
+ }*/

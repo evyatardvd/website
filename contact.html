@@ -9,6 +9,7 @@
 		<link rel="stylesheet" href="css/style.css" />
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<link href='https://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
+
 	</head>
 
 	<body>
@@ -22,10 +23,10 @@
 				</div>
 				<div id="search">
 					<div id="search_input">
-					<input  type="text"/>
+						<input  type="text"/>
 					</div>
 					<div id="search_btn">
-					<button  type="submit"></button>
+						<button  type="submit"></button>
 					</div>
 				</div>
 			</header>
@@ -37,42 +38,51 @@
 							<li>
 								<a href="#">משחקים בתשלום</a>
 							</li>
-							
 							<li>
 								<a href="#">משחקים בחינם</a>
 							</li>
 						</ul>
 					</li>
-					
 					<li>
 						<a href="#">תוכנות</a>
 					</li>
-					
 					<li>
 						<a href="#">מדריכים</a>
 					</li>
-					
 					<li>
 						<a href="#">אפליקציה</a>
 					</li>
-					
 					<li>
 						<a href="#">עידכונים</a>
 					</li>
-					
 					<li>
-						<a href="contact.html">צור קשר</a>
+						<a href="#">צור קשר</a>
 					</li>
 				</ul>
 
 			</nav>
 			<section>
 				<div class="adver">
-					adver
+
 				</div>
-				<article>
-					artical
-				</article>
+				<form>
+					<label for="name"> שם: </label>
+					<input id="cf_name" type="text" maxlength="20" placeholder="שם מלא עד 20 אותיות" required  />
+					<br />
+					<label for="name"> אימייל: </label>
+					<input type="email" required="" maxlength="25" placeholder="מייל עד 25 תווים" />
+					<br />
+					<label for="comments"> הערות :</label>
+					<br />
+					<textarea id="cf_comments" rows="10" cols="20" required="" maxlength="50" placeholder="..."></textarea>
+					<br />
+					<button class="cont_form_btn" id="reset" type="reset">
+						איפוס
+					</button>
+					<button class="cont_form_btn" type="submit">
+						שלח
+					</button>
+				</form>
 			</section>
 			<footer>
 				<nav id="footer-nav">
