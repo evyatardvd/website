@@ -1,4 +1,5 @@
 /*general*/
+
 body {
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
@@ -37,7 +38,7 @@ a {
 	text-decoration: none;
 	color: #FFFFFF;
 }
-li:hover {
+#main-nav li:hover {
 	background-color: #333332;
 }
 
@@ -51,6 +52,7 @@ li:hover {
 	height: 100%;
 }
 header {
+	position: relative;
 	background-color: black;
 	background-image: url('../images/header_bg.jpg');
 	height: 230px;
@@ -70,10 +72,11 @@ section {
 }
 
 #logo {
+	position: absolute;
 	float: right;
-	width: 200px;
-	height: 100px;
-	background-color: #CC0000;
+	position: absolute;
+	left: 66%;
+	top: -8%;
 }
 #social-bar {
 	float: right;
@@ -81,7 +84,10 @@ section {
 	background-color: #FF6600;
 }
 #search {
+
 	float: left;
+	position: relative;
+	width: 30%;
 }
 
 #main-nav {
@@ -90,14 +96,16 @@ section {
 	height: 50px;
 	background-color: #1A1919;
 }
-/*.adver {
- height: 400px;
- width: 200px;
- background-color: #CC0000;
- position: absolute;
- top: 0;
- left: 0;
- }*/
+
+/*logo*/
+#logo a {
+	font-family: 'Rock Salt', cursive;
+	color: #CC0000;
+	text-align: center;
+	font-size: 3em;
+	font-weight: bolder;
+	text-shadow: 1px 1px 1px #000, 3px 3px 5px #990000;
+}
 
 /* nav */
 
@@ -150,10 +158,15 @@ section {
 }
 
 /* search bar*/
-#search input {
+#search_input {
 	margin: 0;
 	padding: 0;
-	width: 60%;
+	width: 0em;
+	position: absolute;
+	left: 93%;
+}
+#search_input input {
+	height: 2em;
 }
 #search_btn {
 	padding: 0 0 0 0 !important;
@@ -164,11 +177,13 @@ section {
 	background-image: url('../images/search-button.png');
 	background-size: 100% 100%;
 	border: none;
+	position: absolute;
+	left: 1%;
 }
 
 /* forms */
 form {
-	margin: 0 auto;
+	margin: 5% 10% 0 0;
 }
 #cf_comments {
 	width: 38%;
@@ -189,7 +204,7 @@ input {
 	margin-bottom: 1%;
 }
 .games_block {
-	display: initial;
+	/*display: initial;*/
 	text-align: center;
 	width: 100%;
 	height: 16em;
@@ -230,6 +245,16 @@ input {
 #world_of_warships {
 	margin: 2%;
 }
+
+/*.adver {
+ height: 400px;
+ width: 200px;
+ background-color: #CC0000;
+ position: absolute;
+ top: 0;
+ left: 0;
+ }*/
+
 /* social bar*/
 
 /* Responsive Design */
