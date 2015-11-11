@@ -93,9 +93,9 @@ section {
 
 #main-nav {
 	display: block;
-	top: 230px;
-	height: 50px;
 	background-color: #1A1919;
+	/*top: 230px;
+	 height: 50px;*/
 }
 
 /*logo*/
@@ -132,18 +132,16 @@ section {
 #main-nav ul li {
 	position: relative;
 	float: right;
-	line-height: 50px;
-	padding: 0 40px;
+	line-height: 308%;
+	padding: 0 4%;
 }
 #main-nav ul li ul li {
 	width: 130px;
 }
 
-
 /* footer */
 
 /* footer */
-
 
 #footer-nav {
 	width: 430px;
@@ -190,6 +188,7 @@ section {
 /* forms */
 form {
 	margin: 5% 10% 0 0;
+
 }
 #cf_comments {
 	width: 38%;
@@ -209,7 +208,10 @@ input {
 .li_games {
 	margin-bottom: 1%;
 }
-.li_games:hover{
+.li_games h6 {
+	font-size: 1em;
+}
+.li_games:hover {
 	background-color: #F0F0F5;
 }
 .games_block {
@@ -221,14 +223,14 @@ input {
 }
 .games_block img {
 	display: block;
-	width: 10%;
-	height: 10%;
-	margin: 0 auto;
+	width: 56%;
+	margin: 2% auto;
 }
 .games_block a {
 	color: blue;
 	text-decoration: underline;
 	display: block;
+	margin: 1% auto;
 }
 .games_block h3 {
 	text-align: center;
@@ -243,7 +245,7 @@ input {
 }
 .games_block iframe {
 	display: block;
-	margin: 0 auto;
+	margin: 1% auto
 }
 #dota2 {
 	margin: 2%;
@@ -274,10 +276,14 @@ input {
  }
  }
  /* tablet  device */
-/*@media screen and (max-width: 758px) {
- display: none;
- }
- /* phone device */
-/*@media screen and (max-width: 480px) {
- display: none;
- }*/
+@media screen and (max-width: 758px) {
+	#container {
+		width: 100%;
+	}
+}
+/* phone device */
+@media screen and (max-width: 480px) {
+	#container {
+		width: 100%;
+	}
+}
