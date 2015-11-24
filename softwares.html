@@ -1,18 +1,18 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 
-<html>
+<html ng-app="inputDataApp">
 
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		<title>top gamer</title>
+		<title>topGamer</title>
 		<link rel="stylesheet" href="css/style.css" />
-		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<link rel="stylesheet" href="css/test.css" />
 		<link href='https://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
 
 	</head>
 
-	<body>
+	<body >
 		<div id="container">
 			<header>
 				<div id="logo">
@@ -37,51 +37,57 @@
 							<li>
 								<a href="#">משחקים בתשלום</a>
 							</li>
+
 							<li>
 								<a href="#">משחקים בחינם</a>
 							</li>
 						</ul>
 					</li>
+
 					<li>
 						<a href="softwares.html">תוכנות</a>
 					</li>
+
 					<li>
 						<a href="#">מדריכים</a>
 					</li>
+
 					<li>
 						<a href="#">אפליקציה</a>
 					</li>
+
 					<li>
 						<a href="#">עידכונים</a>
 					</li>
+
 					<li>
-						<a href="#">צור קשר</a>
+						<a href="contact.html">צור קשר</a>
 					</li>
 				</ul>
 
 			</nav>
-			<section>
+			<section >
 				<div class="adver">
 
 				</div>
-				<form>
-					<label for="name"> שם: </label>
-					<input id="cf_name" type="text" maxlength="20" placeholder="שם מלא עד 20 אותיות" required  />
-					<br />
-					<label for="name"> אימייל: </label>
-					<input type="email" required="" maxlength="25" placeholder="אימייל עד 36 תווים" />
-					<br />
-					<label for="comments"> הערות :</label>
-					<br />
-					<textarea id="cf_comments" rows="10" cols="20" required="" maxlength="50" placeholder="..."></textarea>
-					<br />
-					<button class="cont_form_btn" id="reset" type="reset">
-						איפוס
-					</button>
-					<button class="cont_form_btn" type="submit">
-						שלח
-					</button>
-				</form>
+				<article ng-controller="inputGamesCtrl">
+
+					<div ng-repeat="game in games">
+						<div class="games_block">
+
+							<h3>{{game.name}}</h3>
+							<p>
+								{{game.info}}
+							</p>
+							<img ng-src={{game.pic}}/>
+							<h6> טריילר: </h6>
+							<iframe width="560" height="315" ng-src="{{game.trailerSrc | trustAsResourceUrl}}" frameborder="0" allowfullscreen></iframe>
+							<h6> הורדה: </h6>
+							<a ng-href={{game.link}}>{{game.link}}</a>
+						</div>
+					</div>
+
+				</article>
 			</section>
 			<footer>
 				<nav id="footer-nav">
@@ -102,6 +108,12 @@
 				</p>
 			</footer>
 		</div>
+
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.3/angular.min.js"></script>
+		<script src="angularjs.js"></script>
+		
+
 
 	</body>
 

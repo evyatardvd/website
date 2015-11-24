@@ -39,10 +39,6 @@ a {
 	color: #FFFFFF;
 }
 
-li:hover {
-	background-color: #333332;
-}
-
 /*layout page*/
 #container {
 	position: relative;
@@ -93,9 +89,9 @@ section {
 
 #main-nav {
 	display: block;
-	top: 230px;
-	height: 50px;
 	background-color: #1A1919;
+	/*top: 230px;
+	 height: 50px;*/
 }
 
 /*logo*/
@@ -113,6 +109,9 @@ section {
 #main-nav ul li:hover > ul {
 	display: block;
 	background-color: #1A1919;
+}
+#main-nav li:hover {
+	background-color: #333332;
 }
 
 #main-nav ul ul {
@@ -132,18 +131,14 @@ section {
 #main-nav ul li {
 	position: relative;
 	float: right;
-	line-height: 50px;
-	padding: 0 40px;
+	line-height: 308%;
+	padding: 0 4%;
 }
 #main-nav ul li ul li {
 	width: 130px;
 }
 
-
 /* footer */
-
-/* footer */
-
 
 #footer-nav {
 	width: 430px;
@@ -166,10 +161,11 @@ section {
 /* search bar*/
 #search_input {
 	margin: 0;
-	padding: 0;
-	width: 0em;
-	position: absolute;
-	left: 93%;
+	padding: 0px;
+	width: 42%;
+	/* display: inline-block; */
+	float: left;
+	height: 2em;
 }
 #search_input input {
 	height: 2em;
@@ -178,13 +174,14 @@ section {
 	padding: 0 0 0 0 !important;
 	height: 2em;
 	cursor: pointer;
-	width: 7em;
-	background-color: #FFFFFF;
+	width: 30%;
+	/* background-color: #FFFFFF; */
 	background-image: url('../images/search-button.png');
 	background-size: 100% 100%;
-	border: none;
-	position: absolute;
-	left: 1%;
+	/* border: none; */
+	float: left;
+	display: inline-block;
+	/* border: saddlebrown; */
 }
 
 /* forms */
@@ -209,7 +206,10 @@ input {
 .li_games {
 	margin-bottom: 1%;
 }
-.li_games:hover{
+.li_games h6 {
+	font-size: 1em;
+}
+.li_games:hover {
 	background-color: #F0F0F5;
 }
 .games_block {
@@ -218,32 +218,34 @@ input {
 	width: 100%;
 	height: 16em;
 	margin: 1%;
+	border: 0;
 }
 .games_block img {
 	display: block;
-	width: 10%;
-	height: 10%;
-	margin: 0 auto;
+	width: 56%;
+	margin: 2% auto;
 }
 .games_block a {
 	color: blue;
 	text-decoration: underline;
 	display: block;
+	margin: 1% auto;
 }
 .games_block h3 {
 	text-align: center;
 	color: #404040;
-	font-size: 2em;
+	font-size: 4em;
 	font-style: oblique;
 	font-weight: 900;
 	font-variant: small-caps;
+	margin-bottom: auto;
 }
 .games_block h6 {
 	margin: 0;
 }
 .games_block iframe {
 	display: block;
-	margin: 0 auto;
+	margin: 1% auto
 }
 #dota2 {
 	margin: 2%;
@@ -274,10 +276,14 @@ input {
  }
  }
  /* tablet  device */
-/*@media screen and (max-width: 758px) {
- display: none;
- }
- /* phone device */
-/*@media screen and (max-width: 480px) {
- display: none;
- }*/
+@media screen and (max-width: 758px) {
+	#container {
+		width: 100%;
+	}
+}
+/* phone device */
+@media screen and (max-width: 480px) {
+	#container {
+		width: 100%;
+	}
+}
