@@ -1,4 +1,43 @@
-
-div.ng-scope:hover{
+div.ng-scope:hover {
 	background-color: #F0F0F5;
+}
+div.ng-scope h6 {
+	font-size: 1em;
+}
+div.ng-scope p {
+	padding: 0 1%;
+}
+
+#main_page {
+	border: 1em solid #1A1919;
+}
+#mg_ifram {
+	width: 56%;
+	margin: 0;
+	display: inline-block;
+}
+article h1 {
+	text-align: center;
+	color: #404040;
+	font-size: 4em;
+	font-style: oblique;
+	font-weight: 900;
+	font-variant: small-caps;
+	margin: auto;
+	background-color: #CC430A;
+}
+#main_page p {
+	float: none;
+	display: inline-block;
+	width: 34%;
+	vertical-align: top;
+	margin-right: 3%;
+}
+#main_page a {
+	background-color: red;
+	font-size: 1em;
+}
+
+#softwareSection img{
+	width: 20%;
 }

@@ -9,6 +9,17 @@ app.controller('inputGamesCtrl', function($scope, $http) {
 		alert("error.......!");
 	});
 });
+
+app.controller('inputSoftwareCtrl', function($scope, $http) {
+	$http.get("software.json").success(function(res) {
+
+		$scope.softwares = res;
+
+	}).error(function(data,conpig,status){
+		alert("error.......!");
+	});
+});
+
 app.directive("game", function() {
 	return {
 		restrict : 'E',

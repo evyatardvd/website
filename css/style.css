@@ -39,13 +39,11 @@ a {
 	color: #FFFFFF;
 }
 
-
-
 /*layout page*/
 #container {
 	position: relative;
 	background-color: #FFFFFA;
-	width: 1000px;
+	width: 70%;
 	margin: 0 auto;
 	padding: 0;
 	height: 100%;
@@ -139,8 +137,6 @@ section {
 #main-nav ul li ul li {
 	width: 130px;
 }
-
-
 
 /* footer */
 
@@ -238,10 +234,11 @@ input {
 .games_block h3 {
 	text-align: center;
 	color: #404040;
-	font-size: 2em;
+	font-size: 4em;
 	font-style: oblique;
 	font-weight: 900;
 	font-variant: small-caps;
+	margin-bottom: auto;
 }
 .games_block h6 {
 	margin: 0;
