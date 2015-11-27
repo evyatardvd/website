@@ -1,13 +1,16 @@
 <!DOCTYPE HTML>
 
-<html>
+<html ng-app="inputDataApp">
 
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<title>top gamer</title>
 		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/test.css" />
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 		<link href='https://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
 	</head>
 
@@ -63,59 +66,43 @@
 				<div class="adver">
 
 				</div>
-				<article>
-					<ul>
-						<li class="li_games">
-							<div class="games_block" id="dota2">
-								<h3> Dota 2 </h3>
-								<p>
-									משחק מקוון מרובה משתתפים (multiplayer online) של קרבות.
-									dota 2  הוא משחק של קרבות בו מעורבים שתי צוותים של חמישה שחקנים שכל אחד מהם תופס פינה על המפה.
-									כל מעוז מכיל בניין הנקרא "העתיק" שאותו הקבוצה היריבה חייבת להרוס כדי לנצח.
-									כל שחקן שולט בדמות הנקראת "גיבור" ומתמקד בלעלות רמות, לאסוף זהב, רכישת פריטים ולחימה נגד הקבוצה היריבה כדי להשיג ניצחון.
-									זהו מהשחק עם הכי הרבה משתתפים ב- steam  עם 880,000 שחקנים במקביל נכון לשנת 2015.
-								</p>
-								<img src="/website/images/dota2.jpg" />
-								<h6> טריילר: </h6>
-								<iframe width="560" height="315" src="https://www.youtube.com/embed/-cSFPIwMEq4" frameborder="0" allowfullscreen></iframe>
-								<h6> הורדה: </h6>
-								<a href="http://store.steampowered.com/app/570/?snr=1_200_200_Free+to+Play_103">http://store.steampowered.com/app/570/?snr=1_200_200_Free+to+Play_103</a>
-							</div>
-						</li>
-						<li class="li_games">
-							<div class="games_block" id="war_thunder">
-								<h3> War thunder </h3>
-								<p>
-									"מלחמת הרעם" הוא משחק לחימה בפלטפורמות MMO  למחשב, PS4, Mac ו- Linux, הוא עוסק בתעופה הצבאית  של מלחמת העולם השנייה וכולל בנוסף כלי רכב משוריינים, וציים. השחקן ייקח חלק ברבים מקרבות הלחימה העיקריים שהתרחשו במלחמת העולם 2 ומלחמת קוריאה.
-									השחקן נלחם עם שחקנים נוספים מכל רחבי העולם.
+				<article ng-controller="inputGamesCtrl">
 
-								</p>
-								<img src="/images/WarThunder.jpg" />
-								<h6> טריילר: </h6>
-								<iframe width="560" height="315" src="https://www.youtube.com/embed/VTzHj-R9McA" frameborder="0" allowfullscreen></iframe>
-								<h6> הורדה: </h6>
-								<a href="http://warthunder.com">http://warthunder.com</a>
-							</div>
-						</li>
-						<li class="li_games">
-							<div class="games_block" id="world_of_warships">
-								<h3> World of warships </h3>
-								<p>
-									"העולם של ספינות המלחמה" הוא משחק פעולה ימי בפלטפורמות MMO .
-									הוא נותן לשחקן טבילה לתוך עולם הקרבות הימי של המחצית הראשונה של המאה העשרים.
-									כדי להשיג ניצחון על השחקנים להפגין יכולות לחימה אסטרטגיות והחלטות טקטיות, לבצע מארבים והתקפות ערמומיות וישירות כדי להשמיד את ספינות האויב.
-									המשחק כולל מגוון רחב של ספינות קרב, סיירות, נושאות מטוסים ומשחתות.
+					<div ng-repeat="game in games">
+						<div class="games_block">
 
-								</p>
-								<img src="/images/WorldofWarships.jpg" />
-								<h6> טריילר: </h6>
-								<iframe width="560" height="315" src="https://www.youtube.com/embed/1n8LKx59p6E" frameborder="0" allowfullscreen></iframe>
-								<h6> הורדה: </h6>
-								<a href="http://worldofwarships.eu/en/content/game">http://worldofwarships.eu/en/content/game</a>
-							</div>
+							<h3>{{game.name}}</h3>
+							<p>
+								{{game.info}}
+							</p>
+							<img ng-src={{game.pic}}/>
+							<h6> טריילר: </h6>
+							<iframe width="560" height="315" ng-src="{{game.trailerSrc | trustAsResourceUrl}}" frameborder="0" allowfullscreen></iframe>
+							<h6> הורדה: </h6>
+							<a ng-href={{game.link}}>{{game.link}}</a>
+						</div>
+					</div>
+
+				</article>
+				<div class="pagination">
+					<ul >
+						<li>
+							<a href="#">1</a>
+						</li>
+						<li>
+							<a href="#">2</a>
+						</li>
+						<li>
+							<a href="#">3</a>
+						</li>
+						<li>
+							<a href="#">4</a>
+						</li>
+						<li>
+							<a href="#">5</a>
 						</li>
 					</ul>
-				</article>
+				</div>
 			</section>
 			<footer>
 				<nav id="footer-nav">
@@ -137,6 +124,9 @@
 			</footer>
 		</div>
 
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.3/angular.min.js"></script>
+		<script src="angularjs.js"></script>
 	</body>
 
 </html>

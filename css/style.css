@@ -43,7 +43,7 @@ a {
 #container {
 	position: relative;
 	background-color: #FFFFFA;
-	width: 1000px;
+	width: 70%;
 	margin: 0 auto;
 	padding: 0;
 	height: 100%;
@@ -256,6 +256,13 @@ input {
 #world_of_warships {
 	margin: 2%;
 }
+
+
+/*paging*/
+.pagination{
+	
+}
+
 
 /*.adver {
  height: 400px;

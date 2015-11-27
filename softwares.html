@@ -66,24 +66,22 @@
 				</ul>
 
 			</nav>
-			<section >
+			<section id="softwareSection" >
 				<div class="adver">
 
 				</div>
-				<article ng-controller="inputGamesCtrl">
+				<article ng-controller="inputSoftwareCtrl">
 
-					<div ng-repeat="game in games">
+					<div ng-repeat="software in softwares">
 						<div class="games_block">
 
-							<h3>{{game.name}}</h3>
+							<h3>{{software.name}}</h3>
 							<p>
-								{{game.info}}
+								{{software.info}}
 							</p>
-							<img ng-src={{game.pic}}/>
-							<h6> טריילר: </h6>
-							<iframe width="560" height="315" ng-src="{{game.trailerSrc | trustAsResourceUrl}}" frameborder="0" allowfullscreen></iframe>
+							<img ng-src={{software.pic}}/>
 							<h6> הורדה: </h6>
-							<a ng-href={{game.link}}>{{game.link}}</a>
+							<a ng-href={{software.link}}>{{software.link}}</a>
 						</div>
 					</div>
 
