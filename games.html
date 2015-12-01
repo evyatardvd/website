@@ -15,7 +15,7 @@
 	</head>
 
 	<body>
-		<div id="container">
+		<div id="container"  ng-controller="inputGamesCtrl">
 			<header>
 				<div id="logo">
 					<a href="index.html">topGamer</a>
@@ -37,10 +37,10 @@
 						<a href="games.html">משחקים</a>
 						<ul>
 							<li>
-								<a href="#">משחקים בתשלום</a>
+								<a ng-click="selectNotFreeGames()">משחקים בתשלום</a>
 							</li>
 							<li>
-								<a href="#">משחקים בחינם</a>
+								<a ng-click="selectFreeGames()">משחקים בחינם</a>
 							</li>
 						</ul>
 					</li>
@@ -49,9 +49,6 @@
 					</li>
 					<li>
 						<a href="#">מדריכים</a>
-					</li>
-					<li>
-						<a href="#">אפליקציה</a>
 					</li>
 					<li>
 						<a href="#">עידכונים</a>
@@ -66,9 +63,14 @@
 				<div class="adver">
 
 				</div>
-				<article ng-controller="inputGamesCtrl">
 
-					<div ng-repeat="game in games">
+				<article>
+
+					
+
+					
+					
+					<div ng-repeat="game in games |  filter:{price:filterList} ">
 						<div class="games_block">
 
 							<h3>{{game.name}}</h3>

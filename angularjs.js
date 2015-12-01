@@ -1,13 +1,26 @@
 var app = angular.module("inputDataApp", []);
 
 app.controller('inputGamesCtrl', function($scope, $http) {
+
+	$scope.filterList = "";
+	console.log($scope.filterList);
 	$http.get("games.json").success(function(res) {
 
 		$scope.games = res;
 
-	}).error(function(data,conpig,status){
+	}).error(function(data, conpig, status) {
 		alert("error.......!");
 	});
+
+	$scope.selectFreeGames = function() {
+		
+		$scope.filterList = "free";
+	};
+	$scope.selectNotFreeGames = function() {
+		
+		$scope.filterList = "!free";
+	};
+
 });
 
 app.controller('inputSoftwareCtrl', function($scope, $http) {
@@ -15,7 +28,7 @@ app.controller('inputSoftwareCtrl', function($scope, $http) {
 
 		$scope.softwares = res;
 
-	}).error(function(data,conpig,status){
+	}).error(function(data, conpig, status) {
 		alert("error.......!");
 	});
 });
@@ -28,8 +41,8 @@ app.directive("game", function() {
 });
 
 app.filter('trustAsResourceUrl', ['$sce',
-			function($sce) {
-				return function(val) {
-					return $sce.trustAsResourceUrl(val);
-				};
-			}]);
+function($sce) {
+	return function(val) {
+		return $sce.trustAsResourceUrl(val);
+	};
+}]);
