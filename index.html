@@ -66,13 +66,15 @@
 					<h1>בקרוב...</h1>
 					<div id="main_page" ng-repeat="game in games">
 						<h3> {{game.name}} </h3>
-						<div id="mg_ifram">
-							<iframe width="560" height="315" src="{{game.trailerSrc | trustAsResourceUrl}}" frameborder="0" allowfullscreen></iframe>
-						</div>
+						<div>
+							<iframe width="58%" height="287px" src="{{game.trailerSrc | trustAsResourceUrl}}" frameborder="0" allowfullscreen></iframe>
 						<p>
 							{{game.info}}
+							<br/>
+							<a href="#">לעמוד המשחק </a>
 						</p>
-						<a href="#">עוד</a>
+						
+						</div>
 					</div>
 				</article>
 			</section>

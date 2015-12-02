@@ -32,12 +32,19 @@ article h1 {
 	width: 34%;
 	vertical-align: top;
 	margin-right: 3%;
+	padding: 0;
 }
 #main_page a {
 	background-color: red;
 	font-size: 1em;
 }
-
-#softwareSection img{
-	width: 20%;
+/* software */
+#softwareSection img {
+	width: 10%;
+	display: inline-block;
+}
+#softwareSection h3{
+	width: 67%;
+    margin: 0;
+    display: inline;
 }

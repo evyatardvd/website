@@ -199,8 +199,17 @@ label {
 input {
 	margin: 1%;
 }
-
-/* section artical*/
+/* main page */
+#main_page h3{
+	text-align: center;
+	color: #404040;
+	font-size: 2em;
+	font-style: oblique;
+	font-weight: 900;
+	font-variant: small-caps;
+	margin-bottom: auto;
+}
+/* section artical games*/
 .li_games {
 	margin-bottom: 1%;
 }
