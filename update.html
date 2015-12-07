@@ -60,22 +60,23 @@
 				</ul>
 
 			</nav>
-			<section ng-controller="inputGamesCtrl">
+			<section ng-controller="testCtrl">
 
 				<article >
-					<h1>בקרוב...</h1>
-					<div id="main_page" ng-repeat="game in games">
-						<h3> {{game.name}} </h3>
-						<div id="mpIframe">
-							<iframe  width="42%" height="287px" src="{{game.trailerSrc | trustAsResourceUrl}}" frameborder="0" allowfullscreen ></iframe>
-						<p>
-							{{game.info}}
-							<br/>
-							<a href="#">לעמוד המשחק </a>
-						</p>
-						</div>
-						
+					<div class="update_page">
+						<iframe src="http://www.gamespot.com/pc/games/"></iframe>
 					</div>
+					<div class="update_page">
+						<iframe src="http://www.metacritic.com/browse/games/score/metascore/year/pc/filtered"></iframe>
+					</div>
+					<div class="update_page">
+						<iframe src="http://www.dotafire.com/"></iframe>
+					</div>
+					<div class="update_page">
+						<iframe src="http://www.gamespot.com/pc/games/"></iframe>
+					</div>
+					
+
 				</article>
 			</section>
 			<footer>

@@ -12,19 +12,19 @@ div.ng-scope p {
 	border: 1em solid #1A1919;
 }
 #mg_ifram {
-	width: 56%;
-	margin: 0;
+	width: 42%;
+	margin-right: 8%;
 	display: inline-block;
 }
 article h1 {
 	text-align: center;
-	color: #404040;
+	color: #1A1919;
 	font-size: 4em;
 	font-style: oblique;
 	font-weight: 900;
 	font-variant: small-caps;
 	margin: auto;
-	background-color: #CC430A;
+	background-color: #CC0000;
 }
 #main_page p {
 	float: none;
@@ -38,13 +38,71 @@ article h1 {
 	background-color: red;
 	font-size: 1em;
 }
+#mpIframe {
+	margin: 0 5% 1% -105px;
+}
 /* software */
 #softwareSection img {
 	width: 10%;
 	display: inline-block;
 }
-#softwareSection h3{
+#softwareSection h3 {
 	width: 67%;
-    margin: 0;
-    display: inline;
+	margin: 0;
+	display: inline;
+}
+
+/* guides */
+
+#guides_page h3 {
+	text-align: center;
+	color: #404040;
+	font-size: 2em;
+	font-style: oblique;
+	font-weight: 900;
+	font-variant: small-caps;
+	margin-bottom: auto;
+}
+#guides_page img {
+	display: inline-block;
+	width: 31%;
+	height: 12em;
+	margin: 2% 4%;
+}
+#guides_page p {
+	margin: 2%;
+	padding: 0;
+	display: inline-block;
+	vertical-align: top;
+	width: 50%;
+}
+#guides_page a {
+	color: #0000FF;
+	display: block;
+	margin-left: 4%;
+	padding-bottom: 1%;
+	text-align: left;
+}
+#guides_page a span {
+	color: white;
+	background-color: #808080;
+	border-radius: 5%;
+	padding: 0.5% 1%;
+	box-shadow: 1px 1px 1px 1px #404040;
+	font-weight: bolder;
+	font-size: 0.8em;
+}
+#guides_page a span:hover {
+	color: #FFFFFF;
+	background-color: #cc0000;
+	box-shadow: 1px 1px 1px 1px #CC0000;
+}
+.update_page iframe {
+	width: 99.6%;
+	margin: 0 auto;
+	padding: 0;
+	height: 21em;
+}
+.update_page {
+	border: 1px solid #FFFFFA;
 }

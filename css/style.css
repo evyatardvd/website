@@ -200,7 +200,7 @@ input {
 	margin: 1%;
 }
 /* main page */
-#main_page h3{
+#main_page h3 {
 	text-align: center;
 	color: #404040;
 	font-size: 2em;
@@ -264,19 +264,6 @@ input {
 	margin: 2%;
 }
 
-/*paging*/
-.pagination {
-
-}
-
-/*.adver {
- height: 400px;
- width: 200px;
- background-color: #CC0000;
- position: absolute;
- top: 0;
- left: 0;
- }*/
 
 /* social bar*/
 
@@ -330,6 +317,20 @@ input {
 		line-height: 252%;
 		padding: 0 10%;
 	}
+	#logo {
+		width: 100%;
+		position: static;
+	}
+	#logo a {
+		display: block;
+	}
+	#search {
+		width: 199%;
+		top: 14%;
+	}
+	#search_btn {
+		width: 15%;
+	}
 
 	.games_block iframe {
 		width: 100%;
@@ -340,5 +341,25 @@ input {
 	}
 	.games_block img {
 		width: 73%;
+	}
+
+	#guides_page h3 {
+		font-size: 1em;
+	}
+	#guides_page img {
+
+	}
+	#main_page p {
+		width: 100% !important;
+		margin: 0 !important;
+	}
+	#mpIframe {
+		margin: 0 !important;
+	}
+	iframe {
+		width: 100%;
+	}
+	div.ng-scope p {
+		padding: 0 !important;
 	}
 }
