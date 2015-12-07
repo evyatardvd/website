@@ -52,9 +52,10 @@ header {
 	position: relative;
 	background-color: black;
 	background-image: url('../images/header_bg.jpg');
-	height: 230px;
+	height: 14em;
 	margin: 0;
 	padding: 0;
+	background-size: 100%;
 }
 footer {
 	background-color: black;
@@ -263,7 +264,6 @@ input {
 #world_of_warships {
 	margin: 2%;
 }
-
 
 /* social bar*/
 
