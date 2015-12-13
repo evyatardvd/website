@@ -102,14 +102,63 @@ article h1 {
 
 .update_page iframe {
 	width: 100%;
-	height: 100%;
-	position: absolute;
+	height: 89%;
 }
 .update_page {
-	border: 2px solid black;
-	position: relative;
-	width: 32%;
-	height: 30%;
-	margin: 0% 2%;
+	border-style: outset;
+	width: 24%;
+	height: 12em;
+	margin: 2% 2%;
 	display: inline-block;
+	border-radius: 3%;
+}
+.update_page h4 {
+	font-size: 0.7em;
+	padding: 0;
+	margin: 0;
+}
+
+/* main page*/
+.mp_section h2 {
+	text-align: center;
+	color: #404040;
+	font-size: 3.5em;
+	font-style: oblique;
+	font-weight: 900;
+	font-variant: small-caps;
+	margin-bottom: auto;
+	padding: 0 5%;
+}
+.mp_section iframe {
+	display: block;
+	margin: 0 auto;
+	width: 72%;
+}
+.mp_section p {
+	margin: 1% 5%;
+}
+
+/* contact page*/
+#contact_section {
+	background-image: url('../images/contactBackground.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#contact_form input {
+	margin: 2%;
+	width: 26%;
+	height: 2em;
+}
+#contact_form label {
+	display: inline-block;
+	width: 10%;
+	font-size: 1.5em;
+	margin: 0;
+	padding: 0;
+}
+#contact_form {
+	position: absolute;
+	width: 81%;
+	right: 16%;
+	top: 9%;
 }

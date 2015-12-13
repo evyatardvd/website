@@ -14,9 +14,13 @@ body {
 	background-color: #000000;
 	background-image: url('../images/body_bg.jpg');
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: 100% 100%;
 	margin: 0;
 	padding: 0;
+}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+	display: none !important;
 }
 
 nav {
@@ -37,6 +41,7 @@ a {
 	padding: 0;
 	text-decoration: none;
 	color: #FFFFFF;
+	cursor: pointer;
 }
 
 /*layout page*/
@@ -56,7 +61,7 @@ header {
 	height: 14em;
 	margin: 0;
 	padding: 0;
-	background-size: 100%;
+	background-size: 100% 100%;
 }
 footer {
 	background-color: black;
@@ -65,31 +70,29 @@ footer {
 	padding: 0;
 }
 section {
-	min-height: 500px;
+	min-height: 664px;
 	position: relative;
 	color: black;
 }
 
 #logo {
 	position: absolute;
-	float: right;
-	position: absolute;
 	right: 0;
 	top: -8%;
+	width: 34%;
 }
-#lodo_div {
-	position: relative;
-}
-#social-bar {
-	float: right;
-	width: 500px;
-	background-color: #FF6600;
-}
+/*#lodo_div {
+ position: relative;
+ }*/
+/*#social-bar {
+ float: right;
+ width: 500px;
+ background-color: #FF6600;
+ }*/
 #search {
-
 	float: left;
 	position: relative;
-	width: 30%;
+	width: 23%
 }
 
 #main-nav {
@@ -105,6 +108,7 @@ section {
 	font-size: 3em;
 	font-weight: bolder;
 	text-shadow: 1px 1px 1px #000, 3px 3px 5px #990000;
+	margin-right: 14%;
 }
 
 /* nav */
@@ -113,9 +117,9 @@ section {
 	display: block;
 	background-color: #1A1919;
 }
-#main-nav li:hover {
-	background-color: #333332;
-}
+/*#main-nav li:hover {
+ background-color: #333332;
+ }*/
 
 #main-nav ul ul {
 	position: absolute;
@@ -140,7 +144,12 @@ section {
 #main-nav ul li ul li {
 	width: 130px;
 }
+#main-nav li {
 
+}
+#main-nav a:hover {
+	color: gray;
+}
 /* footer */
 
 #footer-nav {
@@ -165,32 +174,32 @@ section {
 #search_input {
 	margin: 0;
 	padding: 0px;
-	width: 42%;
+	width: 69%;
 	/* display: inline-block; */
 	float: left;
 	height: 2em;
+	margin-left: 1%;
 }
+
 #search_input input {
 	height: 2em;
 }
+
 #search_btn {
 	padding: 0 0 0 0 !important;
-	height: 2em;
+	height: 3em;
 	cursor: pointer;
-	width: 30%;
+	width: 100%;
 	/* background-color: #FFFFFF; */
 	background-image: url('../images/search-button.png');
 	background-size: 100% 100%;
 	/* border: none; */
 	float: left;
 	display: inline-block;
-	/* border: saddlebrown; */
 }
 
 /* forms */
-form {
-	margin: 5% 10% 0 0;
-}
+
 #cf_comments {
 	width: 38%;
 }
@@ -282,16 +291,16 @@ input {
 	#search_input {
 		margin: 0;
 		padding: 0px;
-		width: 48%;
-		float: left;
-		height: 3em;
-		border-radius: 3%;
+		width: 73%;
+		/* float: left; */
+		/* height: 3em; */
+		border-radius: 3%
 	}
 	#search_btn {
 		padding: 0 0 0 0 !important;
 		height: 3em;
 		cursor: pointer;
-		width: 45%;
+		width: 100%;
 		background-size: 100% 100%;
 		float: left;
 		display: inline-block;
@@ -299,7 +308,7 @@ input {
 	#search {
 		float: left;
 		position: relative;
-		width: 50%;
+		width: 34%;
 	}
 	#main-nav ul li:hover > ul {
 		display: none;
@@ -327,13 +336,22 @@ input {
 	}
 	#logo a {
 		display: block;
+		margin-right: 0;
 	}
 	#search {
-		width: 199%;
-		top: 14%;
+		position: absolute;
+		top: 82%;
+		right: 23%;
+		width: 56%;
 	}
 	#search_btn {
-		width: 15%;
+		position: absolute;
+		width: 100%;
+	}
+	#search_input {
+		margin: 0 0 0 1%;
+		width: 74%;
+		height: 80%;
 	}
 
 	.games_block iframe {
@@ -366,5 +384,21 @@ input {
 	div.ng-scope p {
 		padding: 0 !important;
 	}
+	#cf_comments {
+		width: 85%;
+	}
+	#contact_form label {
+		width: 25% !important;
+	}
+	#contact_form input {
+		width: 57% !important;
+	}
+	#main-nav a {
+		font-size: 0.87em;
+	}
+	#main-nav ul li {
+		padding: 0 3.5%;
+	}
+
 }
 

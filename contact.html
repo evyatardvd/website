@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 
-<html>
+<html ng-app="inputDataApp">
 
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,14 +19,11 @@
 				<div id="logo">
 					<a href="index.html">topGamer</a>
 				</div>
-				<div id="social-bar">
-
-				</div>
 				<div id="search">
 
-					<button id="search_btn" type="submit"></button>
-
-					<input id="search_input" type="text"/>
+					<button id="search_btn" type="submit">
+						<input id="search_input" type="text"/>
+					</button>
 
 				</div>
 			</header>
@@ -50,7 +47,7 @@
 						<a href="guides.html">מדריכים</a>
 					</li>
 					<li>
-						<a href="update.html">עידכונים</a>
+						<a href="update.html">מדריכי וידאו</a>
 					</li>
 					<li>
 						<a href="#">צור קשר</a>
@@ -58,10 +55,7 @@
 				</ul>
 
 			</nav>
-			<section>
-				<div class="adver">
-
-				</div>
+			<section id="contact_section">
 				<form id="contact_form">
 					<label for="name"> שם: </label>
 					<input id="cf_name" type="text" maxlength="20" placeholder="שם מלא עד 20 אותיות" required  />
@@ -69,7 +63,7 @@
 					<label for="name"> אימייל: </label>
 					<input type="email" required="" maxlength="25" placeholder="אימייל עד 36 תווים" />
 					<br />
-					<label for="comments"> הערות :</label>
+					<label for="comments"> הערות:</label>
 					<br />
 					<textarea id="cf_comments" rows="10" cols="20" required="" maxlength="50" placeholder="..."></textarea>
 					<br />
