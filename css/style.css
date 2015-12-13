@@ -7,7 +7,7 @@ body {
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
-	direction: rtl;
+	/*direction: rtl;*/
 	text-align: right;
 	color: white;
 	font-family: Arial;
@@ -47,6 +47,7 @@ a {
 	margin: 0 auto;
 	padding: 0;
 	height: 100%;
+	direction: rtl;
 }
 header {
 	position: relative;
@@ -73,8 +74,11 @@ section {
 	position: absolute;
 	float: right;
 	position: absolute;
-	left: 66%;
+	right: 0;
 	top: -8%;
+}
+#lodo_div {
+	position: relative;
 }
 #social-bar {
 	float: right;
@@ -363,3 +367,4 @@ input {
 		padding: 0 !important;
 	}
 }
+

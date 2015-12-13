@@ -97,12 +97,19 @@ article h1 {
 	background-color: #cc0000;
 	box-shadow: 1px 1px 1px 1px #CC0000;
 }
+
+/*update page*/
+
 .update_page iframe {
-	width: 99.6%;
-	margin: 0 auto;
-	padding: 0;
-	height: 21em;
+	width: 100%;
+	height: 100%;
+	position: absolute;
 }
 .update_page {
-	border: 13px solid #1A1919;
+	border: 2px solid black;
+	position: relative;
+	width: 32%;
+	height: 30%;
+	margin: 0% 2%;
+	display: inline-block;
 }
