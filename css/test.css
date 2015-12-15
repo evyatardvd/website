@@ -162,3 +162,32 @@ article h1 {
 	right: 16%;
 	top: 9%;
 }
+
+/* regulatians page*/
+#regul article {
+	margin: 0 5%;
+}
+#regul h3 {
+	text-align: right;
+	color: #404040;
+	font-size: 3.5em;
+	font-style: oblique;
+	font-weight: 900;
+	font-variant: small-caps;
+	margin-bottom: auto;
+	padding: 0 5%;
+}
+/* about page */
+#about article {
+	margin: 0 5%;
+}
+#about h3 {
+	text-align: right;
+	color: #404040;
+	font-size: 3.5em;
+	font-style: oblique;
+	font-weight: 900;
+	font-variant: small-caps;
+	margin-bottom: auto;
+	padding: 0 5%;
+}
